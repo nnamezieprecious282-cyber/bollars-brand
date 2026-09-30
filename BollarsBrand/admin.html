@@ -1,0 +1,1348 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Bollars Brand administrative dashboard.">
+
+    <meta
+        name="robots"
+        content="noindex, nofollow">
+
+    <title>Bollars Admin | Dashboard</title>
+
+    <!-- Google Font -->
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Remix Icons -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+        rel="stylesheet">
+
+    <!-- Admin Styles -->
+    <link
+        rel="stylesheet"
+        href="admin.css">
+
+</head>
+
+
+<body>
+
+    <!-- ==========================================
+                    ADMIN APP
+    =========================================== -->
+
+    <div
+        class="admin-app"
+        id="adminApp">
+
+
+        <!-- ======================================
+                        SIDEBAR
+        ======================================= -->
+
+        <aside
+            class="admin-sidebar"
+            id="adminSidebar">
+
+
+            <!-- Brand -->
+
+            <div class="admin-brand">
+
+                <a
+                    href="admin.html"
+                    class="admin-logo">
+
+                    <img
+                        src="bollars img/brand-logo.png"
+                        alt="Bollars">
+                </a>
+
+                   <span>BOLLARS</span>
+
+            </div>
+
+
+            <!-- Navigation -->
+
+            <nav
+                class="admin-navigation"
+                aria-label="Admin Navigation">
+
+                <p class="nav-section-title">
+                    Management
+                </p>
+
+
+                <button
+                    class="admin-nav-item active"
+                    type="button"
+                    data-section="dashboard">
+
+                    <i class="ri-dashboard-line"></i>
+
+                    <span>Dashboard</span>
+
+                </button>
+
+
+                <button
+                    class="admin-nav-item"
+                    type="button"
+                    data-section="products">
+
+                    <i class="ri-t-shirt-line"></i>
+
+                    <span>Products</span>
+
+                </button>
+
+
+                <button
+                    class="admin-nav-item"
+                    type="button"
+                    data-section="orders">
+
+                    <i class="ri-shopping-bag-3-line"></i>
+
+                    <span>Orders</span>
+
+                </button>
+
+
+                <button
+                    class="admin-nav-item"
+                    type="button"
+                    data-section="customers">
+
+                    <i class="ri-user-3-line"></i>
+
+                    <span>Customers</span>
+
+                </button>
+
+
+                <p class="nav-section-title">
+                    System
+                </p>
+
+
+                <button
+                    class="admin-nav-item"
+                    type="button"
+                    data-section="settings">
+
+                    <i class="ri-settings-3-line"></i>
+
+                    <span>Settings</span>
+
+                </button>
+
+            </nav>
+
+
+            <!-- Sidebar Bottom -->
+
+            <div class="sidebar-bottom">
+
+                <button
+                    class="admin-nav-item"
+                    type="button"
+                    id="adminLogoutBtn">
+
+                    <i class="ri-logout-box-r-line"></i>
+
+                    <span>Exit Admin</span>
+
+                </button>
+
+            </div>
+
+        </aside>
+
+
+        <!-- ======================================
+                    MAIN ADMIN CONTENT
+        ======================================= -->
+
+        <div class="admin-main">
+
+
+            <!-- ==================================
+                        TOP BAR
+            =================================== -->
+
+            <header class="admin-header">
+
+
+                <div class="header-left">
+
+                    <button
+                        class="sidebar-toggle"
+                        id="sidebarToggle"
+                        type="button"
+                        aria-label="Toggle sidebar">
+
+                        <i class="ri-menu-line"></i>
+
+                    </button>
+
+
+                    <div class="page-heading">
+
+                        <span class="page-eyebrow">
+                            Bollars Brand
+                        </span>
+
+                        <h1 id="pageTitle">
+                            Dashboard
+                        </h1>
+
+                    </div>
+
+                </div>
+
+
+                <div class="header-actions">
+
+
+                    <button
+                        class="admin-icon-btn"
+                        id="adminThemeToggle"
+                        type="button"
+                        aria-label="Toggle theme">
+
+                        <i class="ri-moon-line"></i>
+
+                    </button>
+
+
+                    <button
+                        class="admin-icon-btn notification-btn"
+                        type="button"
+                        aria-label="Notifications">
+
+                        <i class="ri-notification-3-line"></i>
+
+                        <span class="notification-dot"></span>
+
+                    </button>
+
+
+                    <div class="admin-user">
+
+                        <div class="admin-user-avatar">
+
+                            <i class="ri-admin-line"></i>
+
+                        </div>
+
+                        <div class="admin-user-info">
+
+                            <strong>Administrator</strong>
+
+                            <span>Admin</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </header>
+
+
+            <!-- ==================================
+                    DASHBOARD CONTENT
+            =================================== -->
+
+            <main class="admin-content">
+
+
+                <!-- Dashboard Section -->
+
+                <section
+                    class="admin-section active"
+                    id="dashboardSection">
+
+
+                    <div class="section-header">
+
+                        <div>
+
+                            <span class="section-eyebrow">
+                                Overview
+                            </span>
+
+                            <h2>Store Dashboard</h2>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Statistics -->
+
+                    <div class="stats-grid">
+
+
+                        <article class="stat-card">
+
+                            <div class="stat-icon">
+
+                                <i class="ri-t-shirt-line"></i>
+
+                            </div>
+
+                            <div class="stat-content">
+
+                                <span>Total Products</span>
+
+                                <strong id="totalProducts">
+                                    0
+                                </strong>
+
+                            </div>
+
+                        </article>
+
+
+                        <article class="stat-card">
+
+                            <div class="stat-icon">
+
+                                <i class="ri-shopping-bag-3-line"></i>
+
+                            </div>
+
+                            <div class="stat-content">
+
+                                <span>Total Orders</span>
+
+                                <strong id="totalOrders">
+                                    0
+                                </strong>
+
+                            </div>
+
+                        </article>
+
+
+                        <article class="stat-card">
+
+                            <div class="stat-icon">
+
+                                <i class="ri-user-3-line"></i>
+
+                            </div>
+
+                            <div class="stat-content">
+
+                                <span>Total Customers</span>
+
+                                <strong id="totalCustomers">
+                                    0
+                                </strong>
+
+                            </div>
+
+                        </article>
+
+
+                        <article class="stat-card">
+
+                            <div class="stat-icon">
+
+                                <i class="ri-eye-line"></i>
+
+                            </div>
+
+                            <div class="stat-content">
+
+                                <span>Total Visitors</span>
+
+                                <strong id="totalVisitors">
+                                    0
+                                </strong>
+
+                            </div>
+
+                        </article>
+
+
+                    </div>
+
+
+                    <!-- Dashboard Grid -->
+
+                    <div class="dashboard-grid">
+
+
+                        <!-- Recent Orders -->
+
+                        <section class="dashboard-card">
+
+                            <div class="card-header">
+
+                                <div>
+
+                                    <span class="card-eyebrow">
+                                        Activity
+                                    </span>
+
+                                    <h3>Recent Orders</h3>
+
+                                </div>
+
+                                <button
+                                    type="button"
+                                    class="text-btn"
+                                    data-section-link="orders">
+
+                                    View All
+
+                                    <i class="ri-arrow-right-line"></i>
+
+                                </button>
+
+                            </div>
+
+
+                            <div
+                                class="empty-state"
+                                id="recentOrdersEmpty">
+
+                                <i class="ri-inbox-line"></i>
+
+                                <h4>No orders yet</h4>
+
+                                <p>
+                                    Recent customer orders will appear here.
+                                </p>
+
+                            </div>
+
+                              <!-- Orders List -->
+
+                              <div class="orders-list" id="recentOrdersList">
+
+                                 <!-- Orders will be rendered here by JavaScript -->
+
+                              </div>
+
+                        </section>
+
+
+                        <!-- Best Selling -->
+
+                        <section class="dashboard-card">
+
+                            <div class="card-header">
+
+                                <div>
+
+                                    <span class="card-eyebrow">
+                                        Performance
+                                    </span>
+
+                                    <h3>Best Selling Products</h3>
+
+                                </div>
+
+                                <button
+                                    type="button"
+                                    class="text-btn"
+                                    data-section-link="products">
+
+                                    View Products
+
+                                    <i class="ri-arrow-right-line"></i>
+
+                                </button>
+
+                            </div>
+
+
+                            <div
+                                class="empty-state"
+                                id="bestSellingEmpty">
+
+                                <i class="ri-bar-chart-line"></i>
+
+                                <h4>No sales data yet</h4>
+
+                                <p>
+                                    Product performance will appear here.
+                                </p>
+
+                            </div>
+
+                                 <!-- Best Selling List -->
+
+                           <div
+                               class="best-selling-list"
+                               id="bestSellingList">
+
+                               <!-- Products will be rendered here by JavaScript -->
+
+                             </div>
+
+                        </section>
+
+
+                    </div>
+
+
+                    <!-- Quick Actions -->
+
+                    <section class="dashboard-card quick-actions-card">
+
+                        <div class="card-header">
+
+                            <div>
+
+                                <span class="card-eyebrow">
+                                    Shortcuts
+                                </span>
+
+                                <h3>Quick Actions</h3>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="quick-actions">
+
+
+                            <button
+                                class="quick-action"
+                                type="button"
+                                data-section-link="products">
+
+                                <span class="quick-action-icon">
+
+                                    <i class="ri-add-line"></i>
+
+                                </span>
+
+                                <span>
+
+                                    <strong>Add Product</strong>
+
+                                    <small>
+                                        Add a new item to the catalog
+                                    </small>
+
+                                </span>
+
+                            </button>
+
+
+                            <button
+                                class="quick-action"
+                                type="button"
+                                data-section-link="orders">
+
+                                <span class="quick-action-icon">
+
+                                    <i class="ri-shopping-bag-line"></i>
+
+                                </span>
+
+                                <span>
+
+                                    <strong>View Orders</strong>
+
+                                    <small>
+                                        Review customer orders
+                                    </small>
+
+                                </span>
+
+                            </button>
+
+
+                            <button
+                                class="quick-action"
+                                type="button"
+                                data-section-link="customers">
+
+                                <span class="quick-action-icon">
+
+                                    <i class="ri-user-search-line"></i>
+
+                                </span>
+
+                                <span>
+
+                                    <strong>View Customers</strong>
+
+                                    <small>
+                                        Manage customer accounts
+                                    </small>
+
+                                </span>
+
+                            </button>
+
+
+                        </div>
+
+                    </section>
+
+                </section>
+
+
+                <!-- ==================================
+                        PRODUCTS SECTION
+                =================================== -->
+
+                <section
+                    class="admin-section"
+                    id="productsSection">
+
+                    <div class="section-header">
+
+                        <div>
+
+                            <span class="section-eyebrow">
+                                Catalog
+                            </span>
+
+                            <h2>Products</h2>
+
+                        </div>
+
+                        <button
+                            class="primary-btn"
+                            id="addProductBtn"
+                            type="button">
+
+                            <i class="ri-add-line"></i>
+
+                            Add Product
+
+                        </button>
+
+                    </div>
+
+<div class="admin-card products-card">
+
+    <!-- Products Toolbar -->
+
+    <div class="products-toolbar">
+
+        <div class="products-search">
+
+            <i class="ri-search-line"></i>
+
+            <input
+                type="search"
+                id="adminProductSearch"
+                placeholder="Search products..."
+                autocomplete="off">
+
+        </div>
+
+
+        <div class="products-actions">
+
+            <select
+                id="adminCategoryFilter"
+                aria-label="Filter products by category">
+
+                <option value="all">
+                    All Categories
+                </option>
+
+                <option value="hoodies">
+                    Hoodies
+                </option>
+
+                <option value="tshirts">
+                    T-Shirts
+                </option>
+
+                <option value="jackets">
+                    Jackets
+                </option>
+
+                <option value="pants">
+                    Pants
+                </option>
+
+                <option value="jerseys">
+                    Jerseys
+                </option>
+
+                <option value="tanktops">
+                    Tank & Tops
+                </option>
+
+                <option value="vintage">
+                    Vintage
+                </option>
+
+            </select>
+
+        </div>
+
+    </div>
+
+
+    <!-- Products List -->
+
+    <div class="admin-products-container">
+
+        <div
+            class="admin-products-list"
+            id="adminProductsList">
+
+            <!-- Products will be rendered by admin.js -->
+
+        </div>
+
+
+        <!-- No Products -->
+
+        <div
+            class="admin-products-empty"
+            id="adminProductsEmpty"
+            hidden>
+
+            <i class="ri-t-shirt-line"></i>
+
+            <h4>No products found</h4>
+
+            <p>
+                Try changing your search or category filter.
+            </p>
+
+           </div>
+
+        </div>
+
+      </div>
+                </section>
+
+                <!-- ==================================
+                        ORDERS SECTION
+                =================================== -->
+
+                <section
+                    class="admin-section"
+                    id="ordersSection">
+
+                    <div class="section-header">
+
+                        <div>
+
+                            <span class="section-eyebrow">
+                                Sales
+                            </span>
+
+                            <h2>Orders</h2>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="admin-card">
+
+                        <div class="empty-state">
+
+                            <i class="ri-shopping-bag-3-line"></i>
+
+                            <h4>No orders available</h4>
+
+                            <p>
+                                Customer orders will appear here.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- ==================================
+                    CUSTOMERS SECTION
+                =================================== -->
+
+                <section
+                    class="admin-section"
+                    id="customersSection">
+
+                    <div class="section-header">
+
+                        <div>
+
+                            <span class="section-eyebrow">
+                                Accounts
+                            </span>
+
+                            <h2>Customers</h2>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="admin-card">
+
+                        <div class="empty-state">
+
+                            <i class="ri-user-3-line"></i>
+
+                            <h4>No customers available</h4>
+
+                            <p>
+                                Customer information will appear here.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- ==================================
+                        SETTINGS SECTION
+                =================================== -->
+
+                <section
+                    class="admin-section"
+                    id="settingsSection">
+
+                    <div class="section-header">
+
+                        <div>
+
+                            <span class="section-eyebrow">
+                                Configuration
+                            </span>
+
+                            <h2>Settings</h2>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="admin-card">
+
+                        <div class="empty-state">
+
+                            <i class="ri-settings-3-line"></i>
+
+                            <h4>Admin settings</h4>
+
+                            <p>
+                                Administrative settings will appear here.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+            </main>
+
+        </div>
+
+    </div>
+
+<!-- ==========================================
+             ADD / EDIT PRODUCT MODAL
+=========================================== -->
+
+<div
+    class="admin-modal"
+    id="productModal"
+    aria-hidden="true">
+
+    <div
+        class="admin-modal-overlay"
+        id="productModalOverlay">
+    </div>
+
+
+    <div
+        class="admin-modal-box"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="productModalTitle">
+
+
+        <!-- Modal Header -->
+
+        <div class="admin-modal-header">
+
+            <div>
+
+                <span class="modal-eyebrow">
+                    Product Management
+                </span>
+
+                <h2 id="productModalTitle">
+                    Add Product
+                </h2>
+
+            </div>
+
+
+            <button
+                type="button"
+                class="admin-modal-close"
+                id="productModalClose"
+                aria-label="Close product modal">
+
+                <i class="ri-close-line"></i>
+
+            </button>
+
+        </div>
+
+
+        <!-- Product Form -->
+
+        <form
+            class="admin-product-form"
+            id="adminProductForm">
+
+
+            <!-- Product Name -->
+
+            <div class="form-group">
+
+                <label for="productName">
+                    Product Name
+                </label>
+
+                <input
+                    type="text"
+                    id="productName"
+                    name="name"
+                    placeholder="Enter product name"
+                    autocomplete="off"
+                    required>
+
+            </div>
+
+
+            <!-- Category + Price -->
+
+            <div class="form-row">
+
+
+                <div class="form-group">
+
+                    <label for="productCategory">
+                        Category
+                    </label>
+
+                    <select
+                        id="productCategory"
+                        name="category"
+                        required>
+
+                        <option value="">
+                            Select category
+                        </option>
+
+                        <option value="hoodies">
+                            Hoodies
+                        </option>
+
+                        <option value="tshirts">
+                            T-Shirts
+                        </option>
+
+                        <option value="jackets">
+                            Jackets
+                        </option>
+
+                        <option value="pants">
+                            Pants
+                        </option>
+
+                        <option value="jerseys">
+                            Jerseys
+                        </option>
+
+                        <option value="tanktops">
+                            Tank & Tops
+                        </option>
+
+                        <option value="vintage">
+                            Vintage
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="productPrice">
+                        Price (USD)
+                    </label>
+
+                    <input
+                        type="number"
+                        id="productPrice"
+                        name="price"
+                        placeholder="59.99"
+                        min="0"
+                        step="0.01"
+                        required>
+
+                </div>
+
+            </div>
+
+
+            <!-- Rating + Badge -->
+
+            <div class="form-row">
+
+
+                <div class="form-group">
+
+                    <label for="productRating">
+                        Rating
+                    </label>
+
+                    <select
+                        id="productRating"
+                        name="rating">
+
+                        <option value="5">
+                            5 Stars
+                        </option>
+
+                        <option value="4">
+                            4 Stars
+                        </option>
+
+                        <option value="3">
+                            3 Stars
+                        </option>
+
+                        <option value="2">
+                            2 Stars
+                        </option>
+
+                        <option value="1">
+                            1 Star
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="productBadge">
+                        Badge
+                    </label>
+
+                    <select
+                        id="productBadge"
+                        name="badge">
+
+                        <option value="">
+                            No Badge
+                        </option>
+
+                        <option value="NEW">
+                            NEW
+                        </option>
+
+                        <option value="HOT">
+                            HOT
+                        </option>
+
+                        <option value="SALE">
+                            SALE
+                        </option>
+
+                        <option value="BEST">
+                            BEST
+                        </option>
+
+                        <option value="LIMITED">
+                            LIMITED
+                        </option>
+
+                        <option value="TRENDING">
+                            TRENDING
+                        </option>
+
+                        <option value="PREMIUM">
+                            PREMIUM
+                        </option>
+
+                        <option value="EXCLUSIVE">
+                            EXCLUSIVE
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+          <!-- Product Image -->
+
+<div class="form-group">
+
+<label for="productImage">
+    Product Image
+</label>
+
+<div
+    class="product-image-upload"
+    id="productImageUpload">
+
+    <input
+        type="file"
+        id="productImage"
+        name="image"
+        accept="image/*"
+        hidden>
+
+    <div
+        class="image-upload-placeholder"
+        id="imageUploadPlaceholder">
+
+        <i class="ri-image-add-line"></i>
+
+        <strong>
+            Upload Product Image
+        </strong>
+
+        <span>
+            Click to select an image
+        </span>
+
+    </div>
+
+
+    <div
+        class="image-preview-container"
+        id="imagePreviewContainer"
+        hidden>
+
+        <img
+            id="productImagePreview"
+            src=""
+            alt="Product image preview">
+
+        <button
+            type="button"
+            class="remove-image-btn"
+            id="removeProductImage"
+            aria-label="Remove product image">
+
+            <i class="ri-close-line"></i>
+
+        </button>
+
+    </div>
+
+</div>
+
+
+<small class="form-help">
+    Upload a JPG, PNG, WEBP, or other supported image.
+</small>
+
+
+</div>
+
+            <!-- Form Actions -->
+
+            <div class="admin-modal-actions">
+
+                <button
+                    type="button"
+                    class="secondary-btn"
+                    id="cancelProductBtn">
+
+                    Cancel
+
+                </button>
+
+
+                <button
+                    type="submit"
+                    class="primary-btn">
+
+                    <i class="ri-save-line"></i>
+
+                    Save Product
+
+                </button>
+
+            </div>
+
+
+        </form>
+
+    </div>
+
+</div>
+
+<!-- ==========================================
+             DELETE PRODUCT MODAL
+=========================================== -->
+
+<div
+    class="admin-modal"
+    id="deleteProductModal"
+    aria-hidden="true">
+
+    <div
+        class="admin-modal-overlay"
+        id="deleteProductModalOverlay">
+    </div>
+
+
+    <div
+        class="admin-modal-box"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="deleteProductModalTitle">
+
+
+        <!-- Modal Header -->
+
+        <div class="admin-modal-header">
+
+            <div>
+
+                <span class="modal-eyebrow">
+                    Product Management
+                </span>
+
+                <h2 id="deleteProductModalTitle">
+                    Delete Product
+                </h2>
+
+            </div>
+
+
+            <button
+                type="button"
+                class="admin-modal-close"
+                id="deleteProductModalClose"
+                aria-label="Close delete confirmation">
+
+                <i class="ri-close-line"></i>
+
+            </button>
+
+        </div>
+
+
+        <!-- Confirmation Content -->
+
+        <div class="delete-product-content">
+
+            <div class="delete-product-icon">
+
+                <i class="ri-delete-bin-line"></i>
+
+            </div>
+
+
+            <h3>
+                Delete this product?
+            </h3>
+
+
+            <p>
+                Are you sure you want to delete
+                <strong id="deleteProductName"></strong>?
+                This product will be removed from your
+                catalog.
+            </p>
+
+
+            <p class="form-help">
+                This action cannot be undone from the admin panel.
+            </p>
+
+        </div>
+
+
+        <!-- Modal Actions -->
+
+        <div class="admin-modal-actions">
+
+            <button
+                type="button"
+                class="secondary-btn"
+                id="cancelDeleteProductBtn">
+
+                Cancel
+
+            </button>
+
+
+            <button
+                type="button"
+                class="primary-btn"
+                id="confirmDeleteProductBtn">
+
+                <i class="ri-delete-bin-line"></i>
+
+                Delete Product
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+   <script src="products.js"></script>
+   <script src="currency.js"></script>
+   <script src="product-store.js"></script>
+   <script src="admin.js"></script>
+
+</body>
+</html>

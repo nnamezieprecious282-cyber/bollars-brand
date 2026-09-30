@@ -1,0 +1,443 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bollars Brand | Premium Streetwear Clothing</title>
+
+    <meta name="description"
+        content="Bollars Brand is a premium streetwear clothing brand delivering stylish, comfortable and timeless fashion.">
+
+    <meta name="keywords"
+        content="Streetwear, Clothing, Fashion, Hoodies, Shirts, Sneakers, Jackets">
+
+    <meta name="author" content="Bollars Brand">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="cart.css">
+</head>
+
+<body>
+
+    <!-- ==========================
+            HEADER
+    =========================== -->
+
+    <header class="header">
+
+        <nav class="navbar">
+
+            <!-- Logo -->
+    <a href="index.html" class="logo">
+
+       <img
+           src="bollars img/brand-logo.png"
+           alt="Bollars"
+           class="logo-image">
+
+       <span class="logo-text">BOLLARS</span>
+
+     </a>
+
+      <!-- Navigation -->
+
+<ul class="nav-links">
+
+    <li>
+        <a href="index.html">Home</a>
+    </li>
+
+    <li>
+        <a href="product.html">Shop</a>
+    </li>
+
+    <li>
+        <a href="index.html#products">Collections</a>
+    </li>
+
+    <li>
+        <a href="index.html#about">About</a>
+    </li>
+
+    <li>
+        <a href="#contact">Contact</a>
+    </li>
+
+    <!-- Mobile Profile -->
+
+    <li class="mobile-profile">
+
+        <button
+            class="profile-btn icon-btn"
+            id="profileBtn"
+            aria-label="Profile">
+
+           <i class="ri-user-line"></i>
+
+        </button>
+
+    </li>
+
+    <!-- Mobile Theme Toggle -->
+
+    <li class="mobile-theme">
+
+        <button
+            class="icon-btn theme-toggle"
+            id="themeToggle"
+            aria-label="Toggle Theme">
+
+            <i class="ri-moon-line"></i>
+
+        </button>
+
+    </li>
+
+</ul>
+
+<!-- Header Icons -->
+
+<div class="nav-icons">
+
+    <!-- Wishlist -->
+
+    <button
+        class="product-wishlist-btn"
+        id="wishlistBtn"
+        aria-label="Wishlist">
+
+        <i class="ri-heart-3-line"></i>
+
+        <span
+            class="icon-count"
+            id="wishlistCount">
+
+            0
+
+        </span>
+
+    </button>
+
+    <!-- Shopping Cart -->
+
+    <button
+        class="icon-btn cart-btn"
+        id="cartBtn"
+        aria-label="Shopping Cart">
+
+        <i class="ri-shopping-bag-3-line"></i>
+
+        <span
+            class="icon-count"
+            id="cartCount">
+
+            0
+
+        </span>
+
+    </button>
+
+    <!-- Desktop Theme -->
+
+    <button
+        class="icon-btn theme-toggle desktop-theme"
+        id="desktopThemeToggle"
+        aria-label="Toggle Theme">
+
+        <i class="ri-moon-line"></i>
+
+    </button>
+
+    <!-- Desktop Profile -->
+
+     <div class="profile-wrapper desktop-profile">
+
+        <button
+            class="profile-btn icon-btn"
+            id="desktopProfileBtn"
+            aria-label="Profile">
+
+      <i class="ri-user-line"></i>
+
+        </button>
+
+    </div> 
+
+    <!-- Mobile Menu -->
+
+    <button
+        class="icon-btn menu-btn"
+        id="menuBtn"
+        aria-label="Open Menu">
+
+        <i class="ri-menu-line"></i>
+
+    </button>
+
+</div>
+</nav>
+</header>
+
+<main>
+
+<div id="cartPage">
+
+    <!-- Hero -->
+    <section class="cart-hero" id="heroCon">
+        <div class="shop-container" >
+            <h1>Your Shopping Cart</h1>
+            <p>Review your selected products before checkout.</p>
+        </div>
+    </section>
+
+    <!-- Cart -->
+ 
+    <!-- ==========================================
+                    CART SECTION
+    =========================================== -->
+
+    <section class="cart-section">
+
+        <div class="container">
+
+            <div class="cart-wrapper">
+
+                <!-- Shopping Cart -->
+
+                <div
+                    id="cartContent"
+                    class="cart-content">
+
+                    <div class="cart-products">
+
+                        <div class="cart-header">
+
+                            <h2>Shopping Cart</h2>
+
+                            <span id="cartItemCount">
+                                0 Items
+                            </span>
+
+                        </div>
+
+                        <div id="cartContainer"></div>
+
+                        </div>
+
+                      
+
+                    <!-- Order Summary -->
+                     
+                           <aside class="cart-summary">
+
+                        <h2>Order Summary</h2>
+
+                        <div class="summary-row">
+
+                            <span>Subtotal</span>
+
+                            <span id="subtotal">$0.00</span>
+
+                        </div>
+
+                        <div class="summary-row">
+
+                            <span>Shipping</span>
+
+                            <span>Free</span>
+
+                        </div>
+
+                        <div class="summary-row total">
+
+                            <span>Total</span>
+
+                            <span id="total">$0.00</span>
+
+                        </div>
+
+                        <button id="checkoutBtn">
+
+                            Proceed To Checkout
+
+                        </button>
+
+                    </aside>
+
+                    </div>
+
+                      </div>
+
+          <!-- Empty Cart -->
+
+                <div
+                    id="emptyCart"
+                    class="empty-cart hidden">
+
+                    <div class="empty-cart-icon">
+
+                        <i class="ri-shopping-bag-3-line"></i>
+
+                    </div>
+
+                    <h2>Your cart is empty</h2>
+
+                    <p>
+
+                        Looks like you haven't added any products yet.
+                        Explore our latest streetwear collection and
+                        discover your next favorite outfit.
+
+                    </p>
+
+                    <a
+                        href="product.html"
+                        class="continue-shopping-btn">
+
+                        Continue Shopping
+
+                        <i class="ri-arrow-right-line"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+ </main>
+
+<!-- ==========================================
+                    FOOTER
+    =========================================== -->
+
+    <footer
+        class="footer"
+        id="contact">
+
+        <div class="footer-container">
+
+            <div class="footer-logo">
+
+                <h2>Bollars Brand</h2>
+
+                <p>
+
+                    Premium streetwear crafted for
+                    confidence, comfort and style.
+
+                </p>
+
+            </div>
+
+            <div class="footer-links">
+
+                <h3>Quick Links</h3>
+
+                <a href="index.html" class="active">Home</a>
+                <a href="product.html">products</a>
+                <a href="index.html#products">Collections</a>
+                <a href="index.html#about">About</a>
+
+            </div>
+
+            <div class="footer-links">
+
+                <h3>Support</h3>
+
+                <a href="#">FAQ</a>
+                <a href="#">Shipping</a>
+                <a href="#">Returns</a>
+                <a href="#">Privacy Policy</a>
+
+            </div>
+
+            <div class="footer-social">
+
+                <h3>Follow Us</h3>
+
+                <div class="social-icons">
+
+                    <a href="#">
+                        <i class="ri-instagram-line"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="ri-facebook-circle-line"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="ri-twitter-x-line"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="ri-tiktok-line"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>
+
+                © 2026 Bollars Brand.
+                All Rights Reserved.
+
+            </p>
+
+        </div>
+
+    </footer>
+
+      <div class="checkout-modal" id="checkoutModal">
+
+    <div class="checkout-box">
+
+    <i class="ri-shopping-bag-3-line"></i>
+
+        <h2>Almost Ready!</h2>
+
+        <p>
+
+            Please select a size for every item before proceeding to checkout.
+
+        </p>
+
+        <button id="closeCheckoutModal">
+
+            Review Cart
+
+        </button>
+
+    </div>
+
+</div>
+ 
+    <script src="currency.js"></script>
+    <script src="products.js"></script>
+    <script src="product-store.js"></script>
+    <script src="cart.js"></script>
+    <script src="cart-page.js"></script>
+    <script src="global.js"></script>
+
+</body>
+</html>

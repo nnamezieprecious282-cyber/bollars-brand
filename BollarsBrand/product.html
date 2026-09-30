@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bollars Brand | Premium Streetwear Clothing</title>
+
+    <meta name="description"
+        content="Bollars Brand is a premium streetwear clothing brand delivering stylish, comfortable and timeless fashion.">
+
+    <meta name="keywords"
+        content="Streetwear, Clothing, Fashion, Hoodies, Shirts, Sneakers, Jackets">
+
+    <meta name="author" content="Bollars Brand">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="product.css">
+</head>
+
+<body>
+
+    <!-- ==========================
+            HEADER
+    =========================== -->
+
+    <header class="header">
+
+        <nav class="navbar">
+
+    <a href="index.html" class="logo">
+
+       <img
+           src="bollars img/brand-logo.png"
+           alt="Bollars"
+           class="logo-image">
+
+       <span class="logo-text">BOLLARS</span>
+
+     </a>
+
+            <!-- Navigation -->
+      <!-- Navigation -->
+
+<ul class="nav-links">
+
+    <li>
+        <a href="index.html">Home</a>
+    </li>
+
+    <li>
+        <a href="product.html">Shop</a>
+    </li>
+
+    <li>
+        <a href="index.html#products">Collections</a>
+    </li>
+
+    <li>
+        <a href="index.html#about">About</a>
+    </li>
+
+    <li>
+        <a href="#contact">Contact</a>
+    </li>
+
+    <!-- Mobile Profile -->
+
+    <li class="mobile-profile">
+
+        <button
+            class="profile-btn icon-btn"
+            id="profileBtn"
+            aria-label="Profile">
+
+          <i class="ri-user-line"></i>
+
+        </button>
+
+    </li>
+
+    <!-- Mobile Theme Toggle -->
+
+     <li class="mobile-theme">
+
+        <button
+            class="icon-btn theme-toggle"
+            id="themeToggle"
+            aria-label="Toggle Theme">
+
+            <i class="ri-moon-line"></i>
+
+        </button>
+
+    </li> 
+
+</ul>
+
+<!-- Header Icons -->
+
+<div class="nav-icons">
+
+    <!-- Wishlist -->
+
+     <button
+        class="product-wishlist-btn"
+        id="wishlistBtn"
+        aria-label="Wishlist">
+
+        <i class="ri-heart-3-line"></i>
+
+        <span
+            class="icon-count"
+            id="wishlistCount">
+
+            0
+
+        </span>
+
+    </button> 
+
+    <!-- Shopping Cart -->
+
+    <button
+        class=" icon-btn cart-btn"
+        id="cartBtn"
+        aria-label="Shopping Cart">
+
+        <i class="ri-shopping-bag-3-line"></i>
+
+        <span
+            class="icon-count"
+            id="cartCount">
+
+            0
+
+        </span>
+
+    </button>
+
+    <!-- Desktop Theme -->
+
+    <button
+        class="icon-btn theme-toggle desktop-theme"
+        id="desktopThemeToggle"
+        aria-label="Toggle Theme">
+
+        <i class="ri-moon-line"></i>
+
+    </button>
+
+    <!-- Desktop Profile -->
+
+     <div class="profile-wrapper desktop-profile">
+
+        <button
+            class="profile-btn icon-btn"
+            id="desktopProfileBtn"
+            aria-label="Profile">
+         
+              <i class="ri-user-line"></i>
+
+        </button>
+
+    </div> 
+
+    <!-- Mobile Menu -->
+
+    <button
+        class="icon-btn menu-btn"
+        id="menuBtn"
+        aria-label="Open Menu">
+
+        <i class="ri-menu-line"></i>
+
+    </button>
+
+</div>
+</nav>
+</header>
+<section class="page-hero">
+
+    <div class="page-hero-content">
+
+        <span>Premium Streetwear</span>
+
+        <h1>Our Products</h1>
+
+        <p>
+            Discover premium fashion crafted for confidence,
+            comfort and everyday style.
+        </p>
+
+        <div class="breadcrumb">
+
+            <div class="breadcrumb-details">
+
+                 <a href="index.html">Home</a>
+
+                 <span>/</span>
+
+                 <p>Products</p>
+
+            </div>
+
+         </div>
+
+      </div>
+
+</section>
+
+<section class="product-controls">
+
+    <div class="search-box">
+
+        <input
+            type="text"
+            id="productSearch"
+            placeholder="Search products...">
+
+    </div>
+
+    <div class="filter-group">
+
+        <select id="categoryFilter">
+
+            <option value="all">All Categories</option>
+
+            <option value="hoodies">Hoodies</option>
+
+            <option value="tshirts">T-Shirts</option>
+
+            <option value="jackets">Jackets</option>
+
+            <option value="pants">Pants</option>
+
+            <option value="jerseys">Jerseys</option>
+
+            <option value="tanktops">Tank & Tops</option>
+
+            <option value="vintage">Vintage</option>
+
+        </select>
+
+ <select id="priceFilter">
+
+    <option value="all">All Prices</option>
+
+    <option value="0-50000">₦0 - ₦50,000</option>
+
+    <option value="50000-100000">
+        ₦50,000 - ₦100,000
+    </option>
+
+    <option value="100000+">
+        ₦100,000+
+    </option>
+
+ </select>
+
+        <select id="sortProducts">
+
+            <option value="default">Sort By</option>
+
+            <option value="priceLow">Price: Low to High</option>
+
+            <option value="priceHigh">Price: High to Low</option>
+
+            <option value="rating">Highest Rated</option>
+
+            <option value="newest">Newest</option>
+
+        </select>
+
+    </div>
+
+</section>
+
+<section class="products-section">
+
+   <div class="product-grid" id="productGrid"></div>
+
+<div
+    class="no-products"
+    id="noProducts">
+
+    <i class="ri-search-eye-line"></i>
+
+    <h2>No Products Found</h2>
+
+    <p>
+
+        We couldn't find any products matching your selection.
+
+        Try another category, price or search.
+
+    </p>
+
+</div>
+
+</section>
+
+<div class="load-more-container">
+
+    <button id="loadMoreBtn">
+
+        Load More
+
+    </button>
+
+</div>
+
+ <!-- ==========================================
+                    FOOTER
+    =========================================== -->
+
+    <footer
+        class="footer"
+        id="contact">
+
+        <div class="footer-container">
+
+            <div class="footer-logo">
+
+                <h2>Bollars Brand</h2>
+
+                <p>
+
+                    Premium streetwear crafted for
+                    confidence, comfort and style.
+
+                </p>
+
+            </div>
+
+            <div class="footer-links">
+
+                <h3>Quick Links</h3>
+
+                <a href="index.html" class="active">Home</a>
+                <a href="product.html">products</a>
+                <a href="index.html#products">Collections</a>
+                <a href="index.html#about">About</a>
+
+            </div>
+
+            <div class="footer-links">
+
+                <h3>Support</h3>
+
+                <a href="#">FAQ</a>
+                <a href="#">Shipping</a>
+                <a href="#">Returns</a>
+                <a href="#">Privacy Policy</a>
+
+            </div>
+
+            <div class="footer-social">
+
+                <h3>Follow Us</h3>
+
+                <div class="social-icons">
+
+                    <a href="#">
+                        <i class="ri-instagram-line"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="ri-facebook-circle-line"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="ri-twitter-x-line"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="ri-tiktok-line"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>
+
+                © 2026 Bollars Brand.
+                All Rights Reserved.
+
+            </p>
+
+        </div>
+
+    </footer>
+
+<script src="currency.js"></script>
+<script src="products.js"></script>
+<script src="product-store.js"></script>
+<script src="cart.js"></script>
+<script src="global.js"></script>
+<script src="product.js"></script>
+
+</body>
+</html>

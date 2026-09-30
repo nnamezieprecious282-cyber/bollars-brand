@@ -1,0 +1,1574 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+<title>Bollars Brand | Checkout</title>
+
+<meta name="description"
+    content="Complete your Bollars Brand order securely.">
+
+<meta name="author"
+    content="Bollars Brand">
+
+<link rel="preconnect"
+    href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin>
+
+<link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+<link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet">
+
+<link rel="stylesheet" href="checkout.css">
+
+</head>
+
+<body>
+
+<!-- ==========================================
+                    HEADER
+=========================================== -->
+
+<header class="header">
+
+<nav class="navbar">
+
+
+    <!-- Logo -->
+
+    <a href="index.html"
+        class="logo">
+
+        <img
+            src="bollars img/brand-logo.png"
+            alt="Bollars"
+            class="logo-image">
+
+        <span class="logo-text">
+            BOLLARS
+        </span>
+
+    </a>
+
+
+    <!-- Navigation -->
+
+    <ul class="nav-links">
+
+        <li>
+            <a href="index.html">
+                Home
+            </a>
+        </li>
+
+        <li>
+            <a href="product.html">
+                Shop
+            </a>
+        </li>
+
+        <li>
+            <a href="index.html#products">
+                Collections
+            </a>
+        </li>
+
+        <li>
+            <a href="index.html#about">
+                About
+            </a>
+        </li>
+
+        <li>
+            <a href="#contact">
+                Contact
+            </a>
+        </li>
+
+
+        <!-- Mobile Profile -->
+
+        <li class="mobile-profile">
+
+            <button
+                class="profile-btn icon-btn"
+                id="profileBtn"
+                aria-label="Profile">
+
+                <i class="ri-user-line"></i>
+
+            </button>
+
+        </li>
+
+
+        <!-- Mobile Theme -->
+
+        <li class="mobile-theme">
+
+            <button
+                class="icon-btn theme-toggle"
+                id="themeToggle"
+                aria-label="Toggle Theme">
+
+                <i class="ri-moon-line"></i>
+
+            </button>
+
+        </li>
+
+    </ul>
+
+
+    <!-- Header Icons -->
+
+    <div class="nav-icons">
+
+
+        <!-- Wishlist -->
+
+        <button
+            class="product-wishlist-btn"
+            id="wishlistBtn"
+            aria-label="Wishlist">
+
+            <i class="ri-heart-3-line"></i>
+
+            <span
+                class="icon-count"
+                id="wishlistCount">
+
+                0
+
+            </span>
+
+        </button>
+
+
+        <!-- Cart -->
+
+        <button
+            class="icon-btn cart-btn"
+            id="cartBtn"
+            aria-label="Shopping Cart">
+
+            <i class="ri-shopping-bag-3-line"></i>
+
+            <span
+                class="icon-count"
+                id="cartCount">
+
+                0
+
+            </span>
+
+        </button>
+
+
+        <!-- Desktop Theme -->
+
+        <button
+            class="icon-btn theme-toggle desktop-theme"
+            id="desktopThemeToggle"
+            aria-label="Toggle Theme">
+
+            <i class="ri-moon-line"></i>
+
+        </button>
+
+
+        <!-- Desktop Profile -->
+
+        <div
+            class="profile-wrapper desktop-profile">
+
+            <button
+                class="profile-btn icon-btn"
+                id="desktopProfileBtn"
+                aria-label="Profile">
+
+                <i class="ri-user-line"></i>
+
+            </button>
+
+        </div>
+
+
+        <!-- Mobile Menu -->
+
+        <button
+            class="icon-btn menu-btn"
+            id="menuBtn"
+            aria-label="Open Menu">
+
+            <i class="ri-menu-line"></i>
+
+        </button>
+
+    </div>
+
+</nav>
+
+
+</header>
+
+<!-- ==========================================
+                    MAIN
+=========================================== -->
+
+<main>
+
+<!-- ======================================
+                HERO
+======================================= -->
+
+<section class="checkout-hero">
+
+    <div class="shop-container">
+
+        <h1>
+            Checkout
+        </h1>
+
+        <p>
+            Complete your details to place your order.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- ======================================
+            CHECKOUT SECTION
+======================================= -->
+
+<section class="checkout-section">
+
+    <div class="container">
+
+        <div class="checkout-wrapper">
+
+
+            <!-- ==================================
+                CUSTOMER / DELIVERY DETAILS
+            =================================== -->
+
+            <div class="checkout-details">
+
+
+                <!-- Customer Information -->
+
+                <div class="checkout-card">
+
+                    <div class="checkout-card-header">
+
+                        <h2>
+                            Customer Information
+                        </h2>
+
+                        <p>
+                            Enter your contact information.
+                        </p>
+
+                    </div>
+
+
+                    <div class="checkout-form">
+
+
+                        <div class="form-group">
+
+                            <label for="customerName">
+                                Full Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="customerName"
+                                name="customerName"
+                                placeholder="Enter your full name"
+                                autocomplete="name"
+                                required>
+
+                        </div>
+
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+
+                                <label for="customerEmail">
+                                    Email Address
+                                </label>
+
+                                <input
+                                    type="email"
+                                    id="customerEmail"
+                                    name="customerEmail"
+                                    placeholder="Enter your email"
+                                    autocomplete="email"
+                                    required>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="customerPhone">
+                                    Phone Number
+                                </label>
+
+                                <input 
+                                   type="tel" 
+                                   id="customerPhone" 
+                                   name="customerPhone" 
+                                   placeholder="080 0000 0000" 
+                                   autocomplete="tel"
+                                   inputmode="numeric"
+                                   maxlength="11"
+                                   required>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Delivery Information -->
+
+                <div class="checkout-card">
+
+                    <div class="checkout-card-header">
+
+                        <h2>
+                            Delivery Information
+                        </h2>
+
+                        <p>
+                            Where should we deliver your order?
+                        </p>
+
+                    </div>
+
+
+                    <div class="checkout-form">
+
+
+                        <div class="form-group">
+
+                            <label for="deliveryAddress">
+                                Delivery Address
+                            </label>
+
+                            <textarea
+                                id="deliveryAddress"
+                                name="deliveryAddress"
+                                rows="4"
+                                placeholder="Enter your full delivery address"
+                                autocomplete="street-address"
+                                required></textarea>
+
+                        </div>
+
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+
+                                <label for="deliveryCity">
+                                    City
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="deliveryCity"
+                                    name="deliveryCity"
+                                    placeholder="Enter city"
+                                    autocomplete="address-level2"
+                                    required>
+
+                            </div>
+
+                            <div class="form-group">
+                                  <label for="deliveryStateSearch">State</label>
+
+                              <div class="state-select" id="stateSelect">
+        <input
+            type="text"
+            id="deliveryStateSearch"
+            placeholder="Search state..."
+            autocomplete="off"
+            aria-label="Search Nigerian state">
+
+        <input
+            type="hidden"
+            id="deliveryState"
+            name="deliveryState"
+            required>
+
+        <div
+            class="state-dropdown"
+            id="stateDropdown"
+            role="listbox"
+            aria-label="Nigerian states">
+               </div>
+       </div>
+              </div>
+                           
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="deliveryNotes">
+                                Delivery Notes
+                                <span>
+                                    (Optional)
+                                </span>
+                            </label>
+
+                            <textarea
+                                id="deliveryNotes"
+                                name="deliveryNotes"
+                                rows="3"
+                                placeholder="Any additional delivery instructions?"></textarea>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Shipping -->
+
+                <div class="checkout-card">
+
+                    <div class="checkout-card-header">
+
+                        <h2>
+                            Shipping
+                        </h2>
+
+                        <p>
+                            Your delivery fee will be calculated based on your delivery location.
+                        </p>
+
+                    </div>
+
+
+                    <div
+                        class="shipping-option"
+                        id="shippingOption">
+
+                        <div class="shipping-info">
+
+                            <i class="ri-truck-line"></i>
+
+                            <div>
+
+                                <h3>
+                                    Standard Delivery
+                                </h3>
+
+                                <p>
+                                    Shipping fee calculated at checkout.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <span
+                            id="shippingFee">
+
+                            ₦0.00
+
+                        </span>
+
+                    </div>
+                                   <!-- Payment Method -->
+
+                <div class="checkout-card payment-card">
+
+                    <div class="checkout-card-header">
+
+                        <h2>
+                            Payment Method
+                        </h2>
+
+                        <p>
+                            Choose how you would like to pay for your order.
+                        </p>
+
+                    </div>
+
+
+                    <div class="payment-methods">
+
+
+                        <!-- Bank Transfer -->
+
+                        <label
+                            class="payment-method active"
+                            data-payment-method="bank_transfer">
+
+                            <input
+                                type="radio"
+                                name="paymentMethod"
+                                value="bank_transfer"
+                                checked>
+
+                            <div class="payment-method-icon">
+
+                                <i class="ri-bank-line"></i>
+
+                            </div>
+
+
+                            <div class="payment-method-info">
+
+                                <h3>
+                                    Bank Transfer
+                                </h3>
+
+                                <p>
+                                    Pay directly to the Bollars Brand bank account.
+                                </p>
+
+                            </div>
+
+
+                            <span class="payment-method-check">
+
+                                <i class="ri-check-line"></i>
+
+                            </span>
+
+                        </label>
+
+             <!-- Opay -->
+
+ <label
+    class="payment-method"
+    data-payment-method="opay">
+
+    <input
+        type="radio"
+        name="paymentMethod"
+        value="opay">
+
+    <div class="payment-method-icon">
+
+        <i class="ri-wallet-3-line"></i>
+
+    </div>
+
+    <div class="payment-method-info">
+
+        <h3>
+            Opay
+        </h3>
+
+        <p>
+            Pay securely by transferring to the Bollars Brand Opay account.
+        </p>
+
+    </div>
+
+    <span class="payment-method-check">
+
+        <i class="ri-check-line"></i>
+
+    </span>
+
+ </label>
+ 
+     </div>
+
+            </div>
+
+                 </div>
+
+            </div>
+
+            <!-- ==================================
+                    ORDER SUMMARY
+            =================================== -->
+
+            <aside class="checkout-summary">
+
+                <div class="checkout-card">
+
+
+                    <div class="checkout-card-header">
+
+                        <h2>
+                            Your Order
+                        </h2>
+
+                        <p>
+                            Review your items before placing your order.
+                        </p>
+
+                    </div>
+
+
+                    <!-- Products -->
+
+                    <div
+                        id="checkoutItems"
+                        class="checkout-items">
+                    </div>
+
+
+                    <!-- Summary -->
+
+                    <div class="summary-divider"></div>
+
+
+                    <div class="summary-row">
+
+                        <span>
+                            Subtotal
+                        </span>
+
+                        <span id="checkoutSubtotal">
+                            ₦0.00
+                        </span>
+
+                    </div>
+
+
+                    <div class="summary-row">
+
+                        <span>
+                            Shipping
+                        </span>
+
+                        <span id="checkoutShipping">
+                            ₦0.00
+                        </span>
+
+                    </div>
+
+
+                    <div class="summary-row total">
+
+                        <span>
+                            Total
+                        </span>
+
+                        <span id="checkoutTotal">
+                            ₦0.00
+                        </span>
+
+                    </div>
+
+
+                    <!-- Place Order -->
+
+                    <button
+                        type="button"
+                        id="placeOrderBtn"
+                        class="place-order-btn">
+
+                        Place Order
+
+                        <i class="ri-arrow-right-line"></i>
+
+                    </button>
+
+
+                    <p class="secure-checkout">
+
+                        <i class="ri-lock-line"></i>
+
+                        Secure checkout
+
+                    </p>
+
+                </div>
+
+            </aside>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+</main>
+
+<!--========================================
+        BANK TRANSFER CONFIRMATION
+=========================================-->
+
+<div
+    class="payment-modal"
+    id="bankTransferModal"
+    aria-hidden="true"
+>
+
+    <div class="payment-modal-overlay"></div>
+
+
+    <div
+        class="payment-modal-content"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="bankTransferModalTitle"
+    >
+
+        <button
+            type="button"
+            class="payment-modal-close"
+            id="closeBankTransferModal"
+            aria-label="Close"
+        >
+
+            <i class="ri-close-line"></i>
+
+        </button>
+
+
+        <div class="payment-modal-header">
+
+            <div class="payment-modal-icon">
+
+                <i class="ri-bank-line"></i>
+
+            </div>
+
+            <h2 id="bankTransferModalTitle">
+                Bank Transfer
+            </h2>
+
+            <p>
+                Enter the details of the bank account
+                you will use to make the transfer.
+            </p>
+
+        </div>
+
+
+        <div class="payment-modal-form">
+
+            <!-- Account Holder Name -->
+
+            <div class="checkout-field">
+
+                <label for="transferAccountName">
+                    Account Holder Name
+                </label>
+
+                <input
+                    type="text"
+                    id="transferAccountName"
+                    placeholder="Enter account holder name"
+                    autocomplete="name"
+                >
+
+            </div>
+
+
+            <!-- Sending Bank -->
+
+            <div class="checkout-field">
+
+                <label for="transferBankName">
+                    Sending Bank
+                </label>
+
+                <input
+                    type="text"
+                    id="transferBankName"
+                    placeholder="e.g. GTBank"
+                    autocomplete="organization"
+                >
+
+            </div>
+
+
+            <button
+                type="button"
+                class="checkout-btn payment-continue-btn"
+                id="continueBankTransfer"
+            >
+
+                Continue to Payment
+
+                <i class="ri-arrow-right-line"></i>
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!--========================================
+        BANK TRANSFER PAYMENT DETAILS
+=========================================-->
+
+<div
+    class="payment-modal"
+    id="bankTransferPaymentModal"
+    aria-hidden="true"
+>
+
+    <div class="payment-modal-overlay"></div>
+
+
+    <div
+        class="payment-modal-content bank-payment-content"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="bankPaymentTitle"
+    >
+
+        <button
+            type="button"
+            class="payment-modal-close"
+            id="closeBankPaymentModal"
+            aria-label="Close"
+        >
+
+            <i class="ri-close-line"></i>
+
+        </button>
+
+
+        <!-- Header -->
+
+        <div class="payment-modal-header">
+
+            <div class="payment-modal-icon">
+
+                <i class="ri-bank-line"></i>
+
+            </div>
+
+
+            <h2 id="bankPaymentTitle">
+                Complete Your Payment
+            </h2>
+
+
+            <p>
+                Transfer the exact amount below
+                to the Bollars Brand account.
+            </p>
+
+        </div>
+
+
+        <!-- Order Amount -->
+
+        <div class="bank-payment-amount">
+
+            <span>
+                Amount to Pay
+            </span>
+
+            <strong id="bankPaymentAmount">
+                ₦0.00
+            </strong>
+
+        </div>
+
+
+        <!-- Bank Details -->
+
+        <div class="bank-details">
+
+            <div class="bank-detail-row">
+
+                <span>
+                    Bank Name
+                </span>
+
+                <strong id="bankPaymentBankName">
+                    —
+                </strong>
+
+            </div>
+
+
+            <div class="bank-detail-row">
+
+                <span>
+                    Account Name
+                </span>
+
+                <strong id="bankPaymentAccountName">
+                    —
+                </strong>
+
+            </div>
+
+
+            <div class="bank-detail-row">
+
+                <span>
+                    Account Number
+                </span>
+
+                <div class="bank-account-number">
+
+                    <strong id="bankPaymentAccountNumber">
+                        —
+                    </strong>
+
+                    <button
+                        type="button"
+                        id="copyBankAccount"
+                        aria-label="Copy account number"
+                    >
+
+                        <i class="ri-file-copy-line"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Important Notice -->
+
+        <div class="bank-payment-notice">
+
+            <i class="ri-information-line"></i>
+
+            <p>
+                Please transfer the exact amount shown
+                above. Your order will remain pending
+                until the payment is verified.
+            </p>
+
+        </div>
+
+
+        <!-- Continue -->
+
+        <button
+            type="button"
+            class="checkout-btn payment-continue-btn"
+            id="transferMadeBtn"
+        >
+
+            I Have Made the Transfer
+
+            <i class="ri-arrow-right-line"></i>
+
+        </button>
+
+    </div>
+
+</div>
+
+<!--========================================
+        OPAY PAYMENT DETAILS
+=========================================-->
+
+<div
+    class="payment-modal"
+    id="opayPaymentModal"
+    aria-hidden="true"
+>
+
+    <div class="payment-modal-overlay"></div>
+
+
+    <div
+        class="payment-modal-content bank-payment-content"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="opayPaymentTitle"
+    >
+
+        <button
+            type="button"
+            class="payment-modal-close"
+            id="closeOpayPaymentModal"
+            aria-label="Close"
+        >
+
+            <i class="ri-close-line"></i>
+
+        </button>
+
+
+        <!-- Header -->
+
+        <div class="payment-modal-header">
+
+            <div class="payment-modal-icon">
+
+                <i class="ri-wallet-3-line"></i>
+
+            </div>
+
+
+            <h2 id="opayPaymentTitle">
+                Complete Your OPay Payment
+            </h2>
+
+
+            <p>
+                Transfer the exact amount below
+                to the Bollars Brand OPay account.
+            </p>
+
+        </div>
+
+
+        <!-- Order Amount -->
+
+        <div class="bank-payment-amount">
+
+            <span>
+                Amount to Pay
+            </span>
+
+            <strong id="opayPaymentAmount">
+                ₦0.00
+            </strong>
+
+        </div>
+
+
+        <!-- OPay Details -->
+
+        <div class="bank-details">
+
+            <div class="bank-detail-row">
+
+                <span>
+                    OPay Account Name
+                </span>
+
+                <strong id="opayPaymentAccountName">
+                    —
+                </strong>
+
+            </div>
+
+
+            <div class="bank-detail-row">
+
+                <span>
+                    OPay Account Number
+                </span>
+
+                <div class="bank-account-number">
+
+                    <strong id="opayPaymentAccountNumber">
+                        —
+                    </strong>
+
+                    <button
+                        type="button"
+                        id="copyOpayAccount"
+                        aria-label="Copy OPay account number"
+                    >
+
+                        <i class="ri-file-copy-line"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Important Notice -->
+
+        <div class="bank-payment-notice">
+
+            <i class="ri-information-line"></i>
+
+            <p>
+                Please transfer the exact amount shown
+                above. Your order will remain pending
+                until the payment is verified.
+            </p>
+
+        </div>
+
+
+        <!-- Continue -->
+
+        <button
+            type="button"
+            class="checkout-btn payment-continue-btn"
+            id="opayTransferMadeBtn"
+        >
+
+            I Have Made the Transfer
+
+            <i class="ri-arrow-right-line"></i>
+
+        </button>
+
+    </div>
+
+</div>
+
+<!--========================================
+        TRANSFER SUBMISSION MODAL
+=========================================-->
+
+<div
+    class="payment-modal"
+    id="transferSubmissionModal"
+    aria-hidden="true"
+>
+
+    <div class="payment-modal-overlay"></div>
+
+
+    <div
+        class="payment-modal-content transfer-submission-content"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="transferSubmissionTitle"
+    >
+
+        <button
+            type="button"
+            class="payment-modal-close"
+            id="closeTransferSubmission"
+            aria-label="Close"
+        >
+
+            <i class="ri-close-line"></i>
+
+        </button>
+
+
+        <div class="payment-modal-header">
+
+            <div class="payment-modal-icon">
+
+                <i class="ri-checkbox-circle-line"></i>
+
+            </div>
+
+
+            <h2 id="transferSubmissionTitle">
+                Confirm Your Transfer
+            </h2>
+
+
+            <p>
+                Submit your transfer details so
+                Bollars Brand can verify your payment.
+            </p>
+
+        </div>
+
+
+        <div class="payment-modal-form">
+
+
+            <!-- Transfer Reference -->
+
+            <div class="checkout-field">
+
+                <label for="transferReference">
+
+                    Transfer Reference
+
+                </label>
+
+                <input
+                    type="text"
+                    id="transferReference"
+                    placeholder="Enter your transfer reference"
+                    autocomplete="off"
+                >
+
+            </div>
+
+
+            <!-- Amount Transferred -->
+
+            <div class="checkout-field">
+
+                <label for="transferAmount">
+
+                    Amount Transferred
+
+                </label>
+
+                <input
+                    type="number"
+                    id="transferAmount"
+                    placeholder="Enter amount transferred"
+                    min="0"
+                    step="0.01"
+                    inputmode="decimal"
+                >
+
+            </div>
+
+
+            <!-- Receipt -->
+
+            <div class="checkout-field">
+
+                <label for="transferReceipt">
+
+                    Payment Receipt
+
+                </label>
+
+                <input
+                    type="file"
+                    id="transferReceipt"
+                    accept="image/jpeg,image/png,image/webp,application/pdf"
+                >
+
+                <small class="payment-field-hint">
+                    Upload your transfer receipt.
+                    JPG, PNG, WebP or PDF.
+                </small>
+
+            </div>
+
+
+            <!-- Submit -->
+
+            <button
+                type="button"
+                class="checkout-btn payment-continue-btn"
+                id="submitTransfer"
+            >
+
+                Submit for Verification
+
+                <i class="ri-arrow-right-line"></i>
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!--========================================
+        PAYMENT SUBMISSION SUCCESS
+=========================================-->
+
+<div
+    class="payment-modal"
+    id="paymentConfirmationModal"
+    aria-hidden="true"
+>
+
+    <div class="payment-modal-overlay"></div>
+
+
+    <div
+        class="payment-modal-content payment-confirmation-content"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="paymentConfirmationTitle"
+    >
+
+        <div class="payment-confirmation-icon">
+
+            <i class="ri-time-line"></i>
+
+        </div>
+
+
+        <div class="payment-modal-header">
+
+            <h2 id="paymentConfirmationTitle">
+                Payment Submitted
+            </h2>
+
+            <p>
+                Your transfer details have been received
+                and are waiting for verification.
+            </p>
+
+        </div>
+
+
+        <!-- Order ID -->
+
+        <div class="confirmation-order">
+
+            <span>
+                Order ID
+            </span>
+
+            <strong id="confirmationOrderId">
+                —
+            </strong>
+
+        </div>
+
+
+        <!-- Payment Summary -->
+
+        <div class="confirmation-details">
+
+            <div class="confirmation-detail-row">
+
+                <span>
+                    Payment Method
+                </span>
+
+                <strong id="confirmationPaymentMethod">
+                    Bank Transfer
+                </strong>
+
+            </div>
+
+
+            <div class="confirmation-detail-row">
+
+                <span>
+                    Amount
+                </span>
+
+                <strong id="confirmationAmount">
+                    ₦0.00
+                </strong>
+
+            </div>
+
+
+            <div class="confirmation-detail-row">
+
+                <span>
+                    Status
+                </span>
+
+                <strong class="confirmation-status">
+                    Awaiting Verification
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <!-- Notice -->
+
+        <div class="confirmation-notice">
+
+            <i class="ri-information-line"></i>
+
+            <p>
+                Your order will be processed after
+                Bollars Brand verifies your payment.
+                Please keep your transfer receipt
+                until verification is complete.
+            </p>
+
+        </div>
+
+
+        <button
+            type="button"
+            class="checkout-btn payment-continue-btn"
+            id="confirmationDoneBtn"
+        >
+
+            Continue Shopping
+
+            <i class="ri-arrow-right-line"></i>
+
+     </button>
+
+
+    <button
+        type="button"
+        class="payment-contact-btn"
+        id="contactAdminBtn"
+    >
+
+        <i class="ri-whatsapp-line"></i>
+
+        Reach Out to Bollars
+
+    </button>
+
+    </div>
+
+</div>
+
+<!-- ==========================================
+                    FOOTER
+=========================================== -->
+
+<footer
+    class="footer"
+    id="contact">
+
+<div class="footer-container">
+
+
+    <div class="footer-logo">
+
+        <h2>
+            Bollars Brand
+        </h2>
+
+        <p>
+            Premium streetwear crafted for
+            confidence, comfort and style.
+        </p>
+
+    </div>
+
+
+    <div class="footer-links">
+
+        <h3>
+            Quick Links
+        </h3>
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="product.html">
+            Products
+        </a>
+
+        <a href="index.html#products">
+            Collections
+        </a>
+
+        <a href="index.html#about">
+            About
+        </a>
+
+    </div>
+
+
+    <div class="footer-links">
+
+        <h3>
+            Support
+        </h3>
+
+        <a href="#">
+            FAQ
+        </a>
+
+        <a href="#">
+            Shipping
+        </a>
+
+        <a href="#">
+            Returns
+        </a>
+
+        <a href="#">
+            Privacy Policy
+        </a>
+
+    </div>
+
+
+    <div class="footer-social">
+
+        <h3>
+            Follow Us
+        </h3>
+
+        <div class="social-icons">
+
+            <a href="#">
+                <i class="ri-instagram-line"></i>
+            </a>
+
+            <a href="#">
+                <i class="ri-facebook-circle-line"></i>
+            </a>
+
+            <a href="#">
+                <i class="ri-twitter-x-line"></i>
+            </a>
+
+            <a href="#">
+                <i class="ri-tiktok-line"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<div class="footer-bottom">
+
+    <p>
+        © 2026 Bollars Brand.
+        All Rights Reserved.
+    </p>
+
+</div>
+
+</footer>
+
+<!-- ==========================================
+                    SCRIPTS
+=========================================== -->
+
+<script src="currency.js"></script>
+
+<script src="products.js"></script>
+
+<script src="product-store.js"></script>
+
+<script src="cart.js"></script>
+
+<script src="shipping.js"></script>
+
+<script src="order-store.js"></script>
+
+<script src="payment.js"></script>
+
+<script src="checkout.js"></script>
+
+<script src="global.js"></script>
+
+</body>
+
+</html>
